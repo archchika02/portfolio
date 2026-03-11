@@ -579,6 +579,28 @@ function setupContactForm() {
   });
 }
 
+function setupMobileMenu() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navContainer = document.querySelector('.nav-container');
+  const navLinks = document.querySelectorAll('.nav-links a, .resume-btn');
+
+  if (!menuToggle) return;
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navContainer.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navContainer.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    });
+  });
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
@@ -589,4 +611,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupAnimations();
   setupScrollSpy();
   setupContactForm();
+  setupMobileMenu();
 });

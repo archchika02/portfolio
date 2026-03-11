@@ -125,6 +125,40 @@ nav {
   gap: 30px;
 }
 
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0;
+}
+
+.mobile-menu-toggle .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
 .nav-links a {
   font-size: 0.85rem;
   font-weight: 700;
@@ -1568,8 +1602,104 @@ footer {
   font-size: 0.8rem;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 120px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+  }
+
+  .hero-image {
+    flex: 0 0 250px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-role {
+    border-left: none;
+    padding-left: 0;
+    display: block;
+  }
+
+  .hero p {
+    margin: 20px auto 30px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-images {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--bg-primary);
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    transition: 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .nav-container.active {
+    right: 0;
+  }
+
   .nav-links {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
   }
 }
