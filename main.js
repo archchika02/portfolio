@@ -130,8 +130,7 @@ const projects = [
       { name: 'Vite', logo: 'devicon-vite-plain colored' },
       { name: 'Tailwind CSS', logo: 'devicon-tailwindcss-original colored' }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02',
   },
   {
     title: 'CineBook Movie Booking',
@@ -144,8 +143,7 @@ const projects = [
       { name: 'NGINX', logo: 'devicon-nginx-original colored' },
       { name: 'Docker', logo: 'devicon-docker-plain colored' }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02',
   },
   {
     title: 'Gazette Chatbot',
@@ -158,8 +156,7 @@ const projects = [
       { name: 'Streamlit', custom: customLogos.streamlit },
       { name: 'Llama 3', custom: customLogos.brain }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02/gazette-chatbot'
   },
   {
     title: 'SmartStudyApp',
@@ -170,8 +167,7 @@ const projects = [
       { name: 'Java', logo: 'devicon-java-plain colored' },
       { name: 'SQLite (Room)', logo: 'devicon-sqlite-plain colored' }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02/SmartStudyApp',
   },
   {
     title: 'SthreeHub',
@@ -186,8 +182,8 @@ const projects = [
       { name: 'Azure', logo: 'devicon-azure-plain colored' },
       { name: 'Docker', logo: 'devicon-docker-plain colored' }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02/auth-service-inte21323',
+    link: 'https://housewife-frontend.azurewebsites.net/',
   },
   {
     title: 'Doctor Appointment System',
@@ -197,8 +193,7 @@ const projects = [
       { name: 'Java', logo: 'devicon-java-plain colored' },
       { name: 'MySQL', logo: 'devicon-mysql-plain colored' }
     ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02',
   },
   {
     title: 'Flappy Bird Text-Based',
@@ -207,20 +202,7 @@ const projects = [
     tech: [
       { name: 'C++', logo: 'devicon-cplusplus-plain colored' }
     ],
-    github: '#',
-    link: '#',
-  },
-  {
-    title: 'Portfolio Website',
-    subtitle: 'Personal Brand | DevOps Themed',
-    description: 'A high-performance, single-page professional portfolio. Showcasing DevOps principles through a terminal-style bio and modern interactive UI.',
-    tech: [
-      { name: 'Vanilla JS', logo: 'devicon-javascript-plain colored' },
-      { name: 'CSS3', logo: 'devicon-css3-plain colored' },
-      { name: 'Vite', logo: 'devicon-vite-plain colored' }
-    ],
-    github: '#',
-    link: '#',
+    github: 'https://github.com/archchika02',
   }
 ];
 
@@ -232,7 +214,7 @@ const achievements = [
     year: '2025',
     description: 'Selected among the Top 5 from 99 teams at the International Conference (ICSUSL 2025). A journey of refining high-impact entrepreneurship ideas and pitching to industry experts.',
     team: 'Thilukshika Leo Jebarajah, Rahitha Thangavel, Thushanthi Sivasothilingam',
-    images: ['./verse1.jpeg', './verse2.jpeg', './verse3.jpeg']
+    images: ['verse1.jpeg', 'verse2.jpeg', 'verse3.jpeg']
   },
   {
     title: 'CodeFest 2025',
@@ -241,7 +223,7 @@ const achievements = [
     year: '2025',
     description: 'Experienced the full entrepreneurship cycle with Team HeraForce. From conceptualizing digital solutions to stage pitching at a premier national platform.',
     team: 'Thilukshika Leo Jebarajah, Thushanthi Sivasothilingam, Rahitha Thangavel',
-    images: ['./sliit1.jpeg', './sliit2.jpeg', './sliit3.png']
+    images: ['sliit1.jpeg', 'sliit2.jpeg', 'sliit3.png']
   },
   {
     title: 'IdraSprint 2025',
@@ -250,7 +232,7 @@ const achievements = [
     year: '2025',
     description: 'Pitched as Team TechNest, receiving intensive mentorship and industry insights. Strengthened technical vision and presentation clarity through professional guidance.',
     team: 'Rahitha Thangavel, Thilukshika Leo Jebarajah, Thushanthi Sivasothilingam',
-    images: ['./idea1.jpeg', './idea2.jpeg', './idea3.jpeg']
+    images: ['idea1.jpeg', 'idea2.jpeg', 'idea3.jpeg']
   }
 ];
 
@@ -259,28 +241,28 @@ const certifications = [
     name: 'DevOps Foundations',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: './DevOpsfou.png',
+    image: 'DevOpsfou.png',
     link: 'https://www.linkedin.com/learning/certificates/94fecfe08e0dc123f1ce9272c236b11f4cc6dd1a67427f4c9fd607349b889166'
   },
   {
     name: 'Git Essential Training',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: './git.png',
+    image: 'git.png',
     link: 'https://www.linkedin.com/learning/certificates/7fc4c117b4de109ea151d7e2ffeca6bea6ae3f3a8fe9327b6ca454c9eb322914'
   },
   {
     name: 'Learning Linux Command Line',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: './linux.png',
+    image: 'linux.png',
     link: 'https://www.linkedin.com/learning/certificates/cfe6ec5f182dbb3664e6c674e5368d1017d94c2a32cd30b22ecc4d4f05010d9e'
   },
   {
     name: 'Networking Basics',
     issuer: 'Cisco',
     date: '2024',
-    image: './networking.png'
+    image: 'networking.png'
   }
 ];
 
@@ -289,31 +271,31 @@ const badges = [
     name: 'Networking Basics',
     issuer: 'Cisco',
     date: '2024',
-    image: './cisco.png',
+    image: 'cisco.png',
     link: 'https://www.credly.com/badges/0183da58-d882-4cb9-baae-8130b1e8505d'
   },
   {
     name: 'AgentBlazer Innovator',
     issuer: 'Code Terriers',
-    image: './inno.png',
+    image: 'inno.png',
     link: 'https://www.salesforce.com/trailblazer/rdam60br6u5aabju7i'
   },
   {
     name: '30 Days of Code',
     issuer: 'HackerRank',
-    image: './hackerrank.png',
+    image: 'hackerrank.png',
     link: 'https://www.hackerrank.com/profile/archchika27'
   },
   {
     name: 'GitHub Models Starter',
     issuer: 'GitHub',
-    image: './models.png',
+    image: 'models.png',
     link: 'https://github.com/nisalgunawardhana/Github-models-starter-pro/issues/60'
   },
   {
     name: 'Generative AI App Starter',
     issuer: 'GitHub',
-    image: './genai.png',
+    image: 'genai.png',
     link: 'https://github.com/nisalgunawardhana/GenAIStarter/issues/4'
   }
 ];
@@ -323,7 +305,7 @@ const activities = [
     title: 'Karate (Yellow Belt Achiever)',
     organization: 'Karate Team, University of Kelaniya',
     description: 'Developed discipline, physical strength, and mental focus as an active member of the university karate team.',
-    images: ['./karate.jpeg'],
+    images: ['karate.jpeg'],
     tags: ['Martial Arts', 'Discipline', 'Yellow Belt'],
     icon: '🥋'
   },
@@ -331,7 +313,7 @@ const activities = [
     title: 'Second Runner Up',
     organization: 'Inter-Faculty Karate Tournament',
     description: 'Achieved 3rd place in the prestigious inter-faculty competition, showcasing competitive spirit and karate techniques.',
-    images: ['./award1.jpeg', './award2.jpeg'],
+    images: ['award1.jpeg', 'award2.jpeg'],
     tags: ['Tournament', 'Achievement', 'Karate'],
     icon: '🏆'
   },
@@ -339,7 +321,7 @@ const activities = [
     title: 'Outbound Training Program',
     organization: 'University of Kelaniya',
     description: 'Participated in a high-intensity leadership development program focusing on team building, problem-solving, and international standards of leadership.',
-    images: ['./outbound.jpeg'],
+    images: ['outbound.jpeg'],
     tags: ['Leadership', 'Team Building', 'Soft Skills'],
     icon: '🏔️'
   }
@@ -394,10 +376,11 @@ function renderProjects() {
             <i class="devicon-github-original"></i>
             Code
           </a>
+          ${project.link ? `
           <a href="${project.link}" target="_blank" class="demo-link">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             Live Demo
-          </a>
+          </a>` : ''}
         </div>
       </div>
     </div>
