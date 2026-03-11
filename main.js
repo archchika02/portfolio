@@ -232,7 +232,7 @@ const achievements = [
     year: '2025',
     description: 'Selected among the Top 5 from 99 teams at the International Conference (ICSUSL 2025). A journey of refining high-impact entrepreneurship ideas and pitching to industry experts.',
     team: 'Thilukshika Leo Jebarajah, Rahitha Thangavel, Thushanthi Sivasothilingam',
-    images: ['/src/verse1.jpeg', '/src/verse2.jpeg', '/src/verse3.jpeg']
+    images: ['./verse1.jpeg', './verse2.jpeg', './verse3.jpeg']
   },
   {
     title: 'CodeFest 2025',
@@ -241,16 +241,16 @@ const achievements = [
     year: '2025',
     description: 'Experienced the full entrepreneurship cycle with Team HeraForce. From conceptualizing digital solutions to stage pitching at a premier national platform.',
     team: 'Thilukshika Leo Jebarajah, Thushanthi Sivasothilingam, Rahitha Thangavel',
-    images: ['/src/sliit1.jpeg', '/src/sliit2.jpeg', '/src/sliit3.png']
+    images: ['./sliit1.jpeg', './sliit2.jpeg', './sliit3.png']
   },
   {
-    title: 'IdeaSprint 2025',
+    title: 'IdraSprint 2025',
     organization: 'University of Kelaniya',
     status: 'Finalist',
     year: '2025',
     description: 'Pitched as Team TechNest, receiving intensive mentorship and industry insights. Strengthened technical vision and presentation clarity through professional guidance.',
     team: 'Rahitha Thangavel, Thilukshika Leo Jebarajah, Thushanthi Sivasothilingam',
-    images: ['/src/idea1.jpeg', '/src/idea2.jpeg', '/src/idea3.jpeg']
+    images: ['./idea1.jpeg', './idea2.jpeg', './idea3.jpeg']
   }
 ];
 
@@ -259,28 +259,28 @@ const certifications = [
     name: 'DevOps Foundations',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: '/src/DevOpsfou.png',
+    image: './DevOpsfou.png',
     link: 'https://www.linkedin.com/learning/certificates/94fecfe08e0dc123f1ce9272c236b11f4cc6dd1a67427f4c9fd607349b889166'
   },
   {
     name: 'Git Essential Training',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: '/src/git.png',
+    image: './git.png',
     link: 'https://www.linkedin.com/learning/certificates/7fc4c117b4de109ea151d7e2ffeca6bea6ae3f3a8fe9327b6ca454c9eb322914'
   },
   {
     name: 'Learning Linux Command Line',
     issuer: 'LinkedIn Learning',
     date: '2024',
-    image: '/src/linux.png',
+    image: './linux.png',
     link: 'https://www.linkedin.com/learning/certificates/cfe6ec5f182dbb3664e6c674e5368d1017d94c2a32cd30b22ecc4d4f05010d9e'
   },
   {
     name: 'Networking Basics',
     issuer: 'Cisco',
     date: '2024',
-    image: '/src/networking.png'
+    image: './networking.png'
   }
 ];
 
@@ -289,31 +289,31 @@ const badges = [
     name: 'Networking Basics',
     issuer: 'Cisco',
     date: '2024',
-    image: '/src/cisco.png',
+    image: './cisco.png',
     link: 'https://www.credly.com/badges/0183da58-d882-4cb9-baae-8130b1e8505d'
   },
   {
     name: 'AgentBlazer Innovator',
     issuer: 'Code Terriers',
-    image: '/src/inno.png',
+    image: './inno.png',
     link: 'https://www.salesforce.com/trailblazer/rdam60br6u5aabju7i'
   },
   {
     name: '30 Days of Code',
     issuer: 'HackerRank',
-    image: '/src/hackerrank.png',
+    image: './hackerrank.png',
     link: 'https://www.hackerrank.com/profile/archchika27'
   },
   {
     name: 'GitHub Models Starter',
     issuer: 'GitHub',
-    image: '/src/models.png',
+    image: './models.png',
     link: 'https://github.com/nisalgunawardhana/Github-models-starter-pro/issues/60'
   },
   {
     name: 'Generative AI App Starter',
     issuer: 'GitHub',
-    image: '/src/genai.png',
+    image: './genai.png',
     link: 'https://github.com/nisalgunawardhana/GenAIStarter/issues/4'
   }
 ];
@@ -323,7 +323,7 @@ const activities = [
     title: 'Karate (Yellow Belt Achiever)',
     organization: 'Karate Team, University of Kelaniya',
     description: 'Developed discipline, physical strength, and mental focus as an active member of the university karate team.',
-    images: ['/src/karate.jpeg'],
+    images: ['./karate.jpeg'],
     tags: ['Martial Arts', 'Discipline', 'Yellow Belt'],
     icon: '🥋'
   },
@@ -331,7 +331,7 @@ const activities = [
     title: 'Second Runner Up',
     organization: 'Inter-Faculty Karate Tournament',
     description: 'Achieved 3rd place in the prestigious inter-faculty competition, showcasing competitive spirit and karate techniques.',
-    images: ['/src/award1.jpeg', '/src/award2.jpeg'],
+    images: ['./award1.jpeg', './award2.jpeg'],
     tags: ['Tournament', 'Achievement', 'Karate'],
     icon: '🏆'
   },
@@ -339,7 +339,7 @@ const activities = [
     title: 'Outbound Training Program',
     organization: 'University of Kelaniya',
     description: 'Participated in a high-intensity leadership development program focusing on team building, problem-solving, and international standards of leadership.',
-    images: ['/src/outbound.jpeg'],
+    images: ['./outbound.jpeg'],
     tags: ['Leadership', 'Team Building', 'Soft Skills'],
     icon: '🏔️'
   }
