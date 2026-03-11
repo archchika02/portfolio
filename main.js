@@ -131,6 +131,28 @@ const projects = [
       { name: 'Tailwind CSS', logo: 'devicon-tailwindcss-original colored' }
     ],
     github: 'https://github.com/archchika02',
+    status: 'Ongoing',
+    details: {
+      isIndividual: true,
+      longDescription: `The Examination Management System (EMS) is a web-based application developed to digitalize and streamline the examination management process in the Department of Industrial Management, University of Kelaniya. It supports multiple academic and administrative roles and automates key tasks involved in student registrations, timetable management, and examination administration. The system improves efficiency, transparency, and coordination between students, faculty, and administrative staff.`,
+      features: [
+        { title: 'Role-Based User Management', desc: 'Secure account creation for Students, Batch Reps, Faculty, Deans, and Hall Attendants with granular RBAC.' },
+        { title: 'Secure Authentication', desc: 'Email verification restricted to official University of Kelaniya addresses.' },
+        { title: 'Course Registration', desc: 'Automated module selection and credit allocation management for students.' },
+        { title: 'Repeat & Medical Applications', desc: 'Efficient submission and handling of special examination cases with document support.' },
+        { title: 'Add/Drop Management', desc: 'Streamlined Semester II course changes with academic advisor recommendations.' },
+        { title: 'Timetable Management', desc: 'Collaborative scheduling with conflict detection and automated overlap prevention.' },
+        { title: 'Automated Document Generation', desc: 'Generates marking sheets, attendance sheets, and admission forms.' },
+        { title: 'Staff Allocation', desc: 'Conflict-free scheduling for supervisors, invigilators, and hall attendants.' },
+        { title: 'Notification System', desc: 'Real-time status tracking for deadlines, timetable releases, and form approvals.' },
+        { title: 'Violation Reporting', desc: 'Digital misconduct recording for examination supervisors.' }
+      ],
+      tools: [
+        { category: 'Frontend', items: 'React & Tailwind CSS' },
+        { category: 'Backend', items: 'Node.js (Express)' },
+        { category: 'Database', items: 'MySQL' }
+      ]
+    }
   },
   {
     title: 'CineBook Movie Booking',
@@ -144,6 +166,23 @@ const projects = [
       { name: 'Docker', logo: 'devicon-docker-plain colored' }
     ],
     github: 'https://github.com/archchika02',
+    details: {
+      longDescription: `CineBook is a distributed movie ticket booking system designed to provide reliable and scalable online seat reservations. The system uses a microservices architecture and modern infrastructure technologies to ensure high availability, data consistency, and smooth booking operations even under heavy user demand.`,
+      features: [
+        { title: 'Microservices Architecture', desc: 'Stateless independent services for authentication and booking that scale horizontally for high performance.' },
+        { title: 'Load Balancing & NGINX', desc: 'Request distribution across instances with automatic failover and backup recovery for continuous operation.' },
+        { title: 'Intelligent Monitoring', desc: 'Watchdog health check service that automatically switches traffic if service failures occur.' },
+        { title: 'Reliable Data Consistency', desc: 'MySQL primary-replica replication with row-level locking to prevent double bookings.' },
+        { title: 'Interactive Booking Flow', desc: 'Real-time seat selection, reservation creation, and automatic seat release mechanism.' },
+        { title: 'Docker-Based Deployment', desc: 'Consistent containerized environments with integrated health checks for system reliability.' }
+      ],
+      tools: [
+        { category: 'Architecture', items: 'Microservices & Distributed Systems' },
+        { category: 'Backend', items: 'Node.js (Express)' },
+        { category: 'Database', items: 'MySQL (Primary-Replica)' },
+        { category: 'Infrastructure', items: 'NGINX & Docker Compose' }
+      ]
+    }
   },
   {
     title: 'Gazette Chatbot',
@@ -156,10 +195,29 @@ const projects = [
       { name: 'Streamlit', custom: customLogos.streamlit },
       { name: 'Llama 3', custom: customLogos.brain }
     ],
-    github: 'https://github.com/archchika02/gazette-chatbot'
+    github: 'https://github.com/archchika02/gazette-chatbot',
+    status: 'Featured',
+    details: {
+      video: 'gazzete.mp4',
+      isGroup: true,
+      size: 'large',
+      longDescription: `Tired of scrolling through hundreds of pages just to find one regulation? 
+     <p> We built the Gazette Chatbot to solve exactly that. Instead of manual searching, this RAG (Retrieval-Augmented Generation) application transforms dense documents into an interactive knowledge base, letting you ask questions in plain English and get instant, cited answers. It’s not just about finding keywords, it’s about understanding context. By leveraging Groq’s LPU inference engine, the chatbot delivers real-time streaming responses that are both fast and factually accurate, linking back to the exact source page.</p>`,
+      features: [
+        { title: 'Multi-LLM Architecture', desc: 'Seamless switching between Groq (Llama 3), OpenAI, and Ollama.' },
+        { title: 'Smart Citations', desc: 'Every answer provides precise source references and page numbers.' },
+        { title: 'Contextual Memory', desc: 'Remembers your conversation history for natural follow-up questions.' },
+        { title: 'Privacy-First', desc: 'Uses a local ChromaDB vector store for secure data handling.' }
+      ],
+      tools: [
+        { category: 'Language', items: 'Python & Streamlit' },
+        { category: 'AI Framework', items: 'LangChain & Groq' },
+        { category: 'Data Storage', items: 'ChromaDB & HuggingFace' }
+      ]
+    }
   },
   {
-    title: 'SmartStudyApp',
+    title: 'Smart Study App',
     subtitle: 'Intelligent Study Companion | Android Mobile Application',
     description: 'An Android application designed to enhance digital studying with advanced PDF/image reading, note-taking, and context-aware features that adapt to lighting and activity.',
     tech: [
@@ -168,6 +226,22 @@ const projects = [
       { name: 'SQLite (Room)', logo: 'devicon-sqlite-plain colored' }
     ],
     github: 'https://github.com/archchika02/SmartStudyApp',
+    details: {
+      video: 'smartstudyapp.mp4',
+      longDescription: `This application is designed to enhance digital studying by providing a seamless, intelligent, and context-aware reading experience. It bridges the gap between traditional textbooks and modern digital convenience.`,
+      features: [
+        { title: 'PDF & Image Reading', desc: 'Smooth rendering with zoom and navigation support for comfortable mobile reading.' },
+        { title: 'Highlighting & Note-Taking', desc: 'Attach notes and highlight key sections for active learning.' },
+        { title: 'Smart Bookmarking', desc: 'Automatically saves last viewed page and key reference points.' },
+        { title: 'Context-Aware UI', desc: 'Adapts interface based on lighting and usage activity for better focus.' },
+        { title: 'Modern Android UI', desc: 'Follows Material Design best practices for a distraction-free experience.' }
+      ],
+      tools: [
+        { category: 'Platform', items: 'Android (Java)' },
+        { category: 'Architecture', items: 'Context-Aware System' },
+        { category: 'Database', items: 'SQLite (Room)' }
+      ]
+    }
   },
   {
     title: 'SthreeHub',
@@ -184,9 +258,28 @@ const projects = [
     ],
     github: 'https://github.com/archchika02/auth-service-inte21323',
     link: 'https://housewife-frontend.azurewebsites.net/',
+    details: {
+      video: 'sthreehub.mp4',
+      isGroup: true,
+      size: 'large',
+      longDescription: `We built a web application with complete authentication service using RESTful APIs. It provides a secure and scalable foundation for modern web platforms.`,
+      features: [
+        { title: 'Registration', desc: 'Secure enrollment with mandatory email verification.' },
+        { title: 'Login & Security', desc: 'JWT-based authentication for state-less security.' },
+        { title: 'Password Reset', desc: 'Self-service password recovery flow.' },
+        { title: 'Role-based Access', desc: 'Granular control for different user roles (Buyer/Seller).' }
+      ],
+      tools: [
+        { category: 'Backend', items: 'Node.js (Express)' },
+        { category: 'Database', items: 'MongoDB' },
+        { category: 'Frontend', items: 'React' },
+        { category: 'Infrastructure', items: 'Azure & Docker' }
+      ],
+      images: ['docker.jpeg', 'azure.jpeg']
+    }
   },
   {
-    title: 'Doctor Appointment System',
+    title: 'CarePoint',
     subtitle: 'Healthcare Management',
     description: 'A healthcare system enabling patient registration, doctor scheduling, and appointment booking. Focuses on improved management efficiency and data security through robust validation.',
     tech: [
@@ -194,15 +287,52 @@ const projects = [
       { name: 'MySQL', logo: 'devicon-mysql-plain colored' }
     ],
     github: 'https://github.com/archchika02',
+    details: {
+      isGroup: true,
+      longDescription: `Excited to share that our team has successfully developed CarePoint, a healthcare system designed to simplify doctor bookings, as part of our Object-Oriented Programming (OOP) Module! This system, built using Java and MySQL, enables patients to effortlessly book doctor appointments, making healthcare access more efficient and organized.`,
+      features: [
+        { title: 'Doctor Bookings', desc: 'Secure and efficient appointment scheduling system.' },
+        { title: 'Patient Portal', desc: 'Easy registration and profile management for patients.' },
+        { title: 'OOP Principles', desc: 'Designed with robust object-oriented architectural patterns.' }
+      ],
+      tools: [
+        { category: 'Language', items: 'Java' },
+        { category: 'Database', items: 'MySQL' },
+        { category: 'Architecture', items: 'OOP Design Patterns' }
+      ],
+      images: ['carepoint1.jpeg', 'carepoint2.jpeg', 'carepoint3.jpeg', 'carepoint4.jpeg', 'carepoint5.jpeg']
+    }
   },
   {
-    title: 'Flappy Bird Text-Based',
+    title: 'Flappy Bird',
     subtitle: 'C++ Game Development',
     description: 'A text-based game featuring collision detection, randomized obstacles, and high-score persistence. Optimized for smooth movement and screen refresh performance.',
     tech: [
       { name: 'C++', logo: 'devicon-cplusplus-plain colored' }
     ],
     github: 'https://github.com/archchika02',
+    details: {
+      isGroup: true,
+      longDescription: `We built a simple Flappy Bird 🐦 mini-game using C++ to demonstrate core game mechanics and performance optimization in a console environment.`,
+      features: [
+        { title: 'Game Mechanics', desc: 'Implemented core physics and collision detection using C++.' },
+        { title: 'Scoring System', desc: 'Real-time tracking of player progress and high-score persistence.' },
+        { title: 'Level Selection', desc: 'Difficulty selection feature for different player skill levels.' }
+      ],
+      tools: [
+        { category: 'Language', items: 'C++' },
+        { category: 'Paradigm', items: 'Object-Oriented Programming (OOP)' },
+        { category: 'Graphics', items: 'Console Graphics' }
+      ],
+      images: [
+        'flappy1.jpeg',
+        'flappy2.jpeg',
+        'flappy3.jpeg',
+        'flappy4.jpeg',
+        'flappy5.jpeg',
+        'flappy6.jpeg'
+      ]
+    }
   }
 ];
 
@@ -352,9 +482,7 @@ function renderProjects() {
   const grid = document.getElementById('projects-grid');
   grid.innerHTML = projects.map((project, index) => `
     <div class="card project-card ${index === 0 ? 'featured' : ''}" 
-      onmousemove="this.style.setProperty('--mouse-x', event.offsetX + 'px'); this.style.setProperty('--mouse-y', event.offsetY + 'px')"
-      ontouchmove="const rect = this.getBoundingClientRect(); const touch = event.touches[0]; this.style.setProperty('--mouse-x', (touch.clientX - rect.left) + 'px'); this.style.setProperty('--mouse-y', (touch.clientY - rect.top) + 'px')"
-      ontouchstart="const rect = this.getBoundingClientRect(); const touch = event.touches[0]; this.style.setProperty('--mouse-x', (touch.clientX - rect.left) + 'px'); this.style.setProperty('--mouse-y', (touch.clientY - rect.top) + 'px')">
+      onmousemove="this.style.setProperty('--mouse-x', event.offsetX + 'px'); this.style.setProperty('--mouse-y', event.offsetY + 'px')">
       <div class="spotlight"></div>
       <div class="border-tracers">
         <span class="tracer tracer-top"></span>
@@ -375,17 +503,23 @@ function renderProjects() {
           `).join('')}
         </div>
         <div class="project-links">
-          <a href="${project.github}" target="_blank" class="github-link">
-            <i class="devicon-github-original"></i>
-            Code
-          </a>
-          ${project.link ? `
-          <a href="${project.link}" target="_blank" class="demo-link">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-            Live Demo
-          </a>` : ''}
+          <div class="links-left">
+            <a href="${project.github}" target="_blank" class="github-link">
+              <i class="devicon-github-original"></i>
+              Code
+            </a>
+            ${project.link ? `
+            <a href="${project.link}" target="_blank" class="demo-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>` : ''}
+          </div>
+            <a href="javascript:void(0)" onclick="openProjectModal(${index})" class="view-details">
+              View more details <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
       </div>
+      ${project.status ? `<div class="project-status-badge">${project.status}</div>` : ''}
     </div>
   `).join('');
 }
@@ -588,6 +722,30 @@ function setupMobileMenu() {
 }
 
 // Initialize
+function setupTouchAnimations() {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    const handleTouch = (e) => {
+      const rect = card.getBoundingClientRect();
+      const touch = e.touches[0];
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+
+      // Force active state behaviors on touch
+      card.classList.add('touch-active');
+    };
+
+    card.addEventListener('touchstart', handleTouch, { passive: true });
+    card.addEventListener('touchmove', handleTouch, { passive: true });
+
+    card.addEventListener('touchend', () => {
+      card.classList.remove('touch-active');
+    }, { passive: true });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
   renderProjects();
@@ -598,4 +756,77 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScrollSpy();
   setupContactForm();
   setupMobileMenu();
+  setupTouchAnimations();
+});
+
+window.openProjectModal = function (index) {
+  const project = projects[index];
+  if (!project.details) return;
+
+  const modal = document.getElementById('project-modal');
+  const modalBody = document.getElementById('modal-body');
+
+  modalBody.innerHTML = `
+    ${project.details.video ? `
+      <video class="modal-detail-video ${project.details.size || ''}" autoplay muted loop playsinline>
+        <source src="${project.details.video}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    ` : ''}
+    <div class="modal-detail-content">
+      <h2 class="modal-detail-subtitle">
+        ${project.title} 
+        ${(project.details.isGroup || project.details.isIndividual || project.status) ? `
+          <span class="modal-title-tag">
+            ${project.details.isGroup ? 'Group' : (project.details.isIndividual ? `${project.status} | Individual` : project.status)}
+          </span>
+        ` : ''}
+      </h2>
+      <p>${project.details.longDescription}</p>
+      
+      <h3 class="modal-detail-subtitle">Key Technical Features</h3>
+      <div class="modal-detail-list">
+        ${project.details.features.map(f => `
+          <div>✅ <strong>${f.title}</strong>- ${f.desc}</div>
+        `).join('')}
+      </div>
+      
+      <h3 class="modal-detail-subtitle">Built With</h3>
+      <div class="modal-detail-list">
+        ${project.details.tools.map(t => `
+          <div>🔹 <strong>${t.category}</strong>- ${t.items}</div>
+        `).join('')}
+      </div>
+
+      ${project.details.images ? `
+        <h3 class="modal-detail-subtitle">Project Gallery</h3>
+        <div class="modal-detail-gallery">
+          ${project.details.images.map(img => `
+            <img src="${img}" alt="Project Image" class="modal-gallery-img">
+          `).join('')}
+        </div>
+      ` : ''}
+    </div>
+  `;
+
+  modal.classList.add('active');
+  document.body.classList.add('no-scroll');
+};
+
+window.closeProjectModal = function () {
+  const modal = document.getElementById('project-modal');
+  modal.classList.remove('active');
+  document.body.classList.remove('no-scroll');
+
+  // Clear body to stop video
+  setTimeout(() => {
+    document.getElementById('modal-body').innerHTML = '';
+  }, 400);
+};
+
+// Close modal on Escape key
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeProjectModal();
+  }
 });
