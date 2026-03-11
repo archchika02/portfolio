@@ -1666,7 +1666,9 @@ body.no-scroll {
     right: -100%;
     width: 80%;
     height: 100vh;
-    background: var(--bg-primary);
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     justify-content: center;
     gap: 40px;
@@ -1687,6 +1689,8 @@ body.no-scroll {
 
   .nav-links a {
     font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 
   .mobile-menu-toggle {
@@ -1703,5 +1707,28 @@ body.no-scroll {
 
   .contact-container {
     grid-template-columns: 1fr;
+  }
+
+  /* Premium Mobile Effects */
+  .project-card:active {
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.2);
+    transform: scale(0.98);
+  }
+
+  .project-card:active .spotlight {
+    opacity: 1;
+  }
+
+  .project-card:active .tracer {
+    opacity: 1;
+  }
+
+  .achievement-img {
+    filter: grayscale(0) brightness(1);
+  }
+
+  .achievement-card {
+    padding: 30px 20px;
   }
 }

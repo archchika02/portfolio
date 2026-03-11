@@ -351,7 +351,10 @@ function renderSkills() {
 function renderProjects() {
   const grid = document.getElementById('projects-grid');
   grid.innerHTML = projects.map((project, index) => `
-    <div class="card project-card ${index === 0 ? 'featured' : ''}" onmousemove="this.style.setProperty('--mouse-x', event.offsetX + 'px'); this.style.setProperty('--mouse-y', event.offsetY + 'px')">
+    <div class="card project-card ${index === 0 ? 'featured' : ''}" 
+      onmousemove="this.style.setProperty('--mouse-x', event.offsetX + 'px'); this.style.setProperty('--mouse-y', event.offsetY + 'px')"
+      ontouchmove="const rect = this.getBoundingClientRect(); const touch = event.touches[0]; this.style.setProperty('--mouse-x', (touch.clientX - rect.left) + 'px'); this.style.setProperty('--mouse-y', (touch.clientY - rect.top) + 'px')"
+      ontouchstart="const rect = this.getBoundingClientRect(); const touch = event.touches[0]; this.style.setProperty('--mouse-x', (touch.clientX - rect.left) + 'px'); this.style.setProperty('--mouse-y', (touch.clientY - rect.top) + 'px')">
       <div class="spotlight"></div>
       <div class="border-tracers">
         <span class="tracer tracer-top"></span>
