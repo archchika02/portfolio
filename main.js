@@ -310,7 +310,7 @@ const projects = [
     tech: [
       { name: 'C++', logo: 'devicon-cplusplus-plain colored' }
     ],
-    github: 'https://github.com/archchika02',
+    github: 'https://github.com/archchika02/flappyBird',
     details: {
       isGroup: true,
       longDescription: `We built a simple Flappy Bird 🐦 mini-game using C++ to demonstrate core game mechanics and performance optimization in a console environment.`,
